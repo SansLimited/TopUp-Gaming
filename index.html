@@ -3,61 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Web Loader</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            text-align: center;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
-
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 1rem;
-        }
-
-        main {
-            padding: 2rem;
-        }
-
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-
-        h1 {
-            color: #333;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            font-size: 1.1rem;
-            color: #fff;
-            background-color: #4CAF50;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        a:hover {
-            background-color: #45a049;
+        iframe {
+            width: 80%;
+            height: 80%;
+            border: none;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-    </header>
-    <main>
-        <div class="container">
-            <p>Check out my server:</p>
-            <a href="https://92d4-114-4-78-241.ngrok-free.app" target="_blank">Visit Server</a>
-        </div>
-    </main>
+    <div class="container">
+        <iframe src="https://ab14-114-4-78-241.ngrok-free.app" title="Embedded Content"></iframe>
+    </div>
 </body>
 </html>
